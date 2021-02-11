@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SignIn</title>
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: url(bg.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
+
+		.signin-titles {
+			font-family: 'Nunito', sans-serif;
+			font-size: 23px;
+			margin-bottom: 0px;
+			background: none;
+			color: aliceblue;
+		}
+
+		.signin-card {
+			background: none;
+			margin: 2%;
+			margin-top: 20%;
+			padding: 3% 5% 5% 5%;
+			background: none;
+			align-items: center;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Signin card with styling -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="signin-card">
+					<br>
+					<h2
+						style="text-align: center; font-family: 'Nunito', sans-serif;; font-size: 28px; font-weight: 600; color: aliceblue;">
+						Sign In
+					</h2>
+					<form action="/signin/" method="POST">
+						<p class="signin-titles" style="font-size: 16px; margin-top: 30px; background: none;">Username
+						</p>
+						<input type="username" name="username" class="form-control" placeholder="Enter your username"
+							required>
+						<p class="signin-titles" style="font-size: 16px; margin-top: 30px; background: none;">Password
+						</p>
+						<input type="password" name="password" class="form-control" placeholder="Enter your password"
+							required>
+						<br>
+						<div class="submit">
+							<button type="submit" class="btn btn-md btn-success signup-btn">SignIn</button>
+						</div><br>
+						<p
+							style="font-family: 'Nunito', sans-serif; margin-top: 10px; font-size: 22px; opacity: .8; color: aliceblue; text-align: center;">
+							Don't have an account? Create One <br>
+							<a href="sigup.html">Signup</a>
+						</p>
+					</form>
+				</div>
+				<div class="col-md-3"></div>
+			</div>
+		</div>
+</body>
+
+</html>

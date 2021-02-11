@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Signup</title>
+	<link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			background: url(bg.jpg) no-repeat center center fixed;
+			background-size: cover;
+		}
+
+		.signup-titles {
+			font-family: 'Nunito', sans-serif;
+			font-size: 23px;
+			margin-bottom: 0px;
+			background: none;
+			color: aliceblue;
+		}
+
+		.signup-card {
+			background: none;
+			margin: 2%;
+			margin-top: 20%;
+			padding: 3% 5% 5% 5%;
+			background: none;
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- Signup card with styling -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<div class="signup-card">
+					<h2
+						style="text-align: center; font-family: 'Nunito', sans-serif;; font-size: 28px; font-weight: 600; color: aliceblue;">
+						Sign Up
+					</h2>
+					<form action="/signup/" method="POST">
+						<p class="signup-titles">Name</p>
+						<input type="name" name="name" class="form-control" placeholder="Enter your name"
+							required><br><br><br>
+						<p class="signup-titles" style="margin-top: 2px;">Username</p>
+						<input type="username" name="username" class="form-control" placeholder="Enter your Username"
+							required><br><br>
+						<p class="signup-titles" style="margin-top: 2px;">Email</p>
+						<input type="email" name="email" class="form-control" placeholder="Enter your email"
+							required><br><br>
+						<p class="signup-titles" style="margin-top: 2px;">Password</p>
+						<input type="password" name="password" class="form-control" placeholder="Enter your password"
+							required><br><br>
+						<div class="signup-titles" style="margin-top: 2px;">Select user type:
+							<select class="custom-select" style="width: 120px; margin: 10px;" name="user_type"
+								required><br><br>
+								<option value="1">Incognito1</option>
+								<option value="2">Incognito2</option>
+							</select>
+						</div>
+						<div class="submit">
+							<button type="submit" class="btn btn-md btn-success signup-btn">SignUp</button>
+						</div><br>
+						<p
+							style="font-family: 'Nunito', sans-serif; margin-top: 10px; font-size: 22px; opacity: .8; color: aliceblue; text-align: center;">
+							Have an account already?<br> <a href="signin.html">Sign In</a>
+						</p>
+					</form>
+				</div>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+	</div>
+</body>
+
+</html>
